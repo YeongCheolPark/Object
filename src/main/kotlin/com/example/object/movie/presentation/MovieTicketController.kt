@@ -7,8 +7,14 @@ import org.springframework.web.bind.annotation.RestController
 @RequestMapping("/movie/v1/tickets")
 class MovieTicketController {
     @RequestMapping
-    fun root(): String {
-        return "Hello, World!"
+    fun greetings(): String {
+        return "Hello, Movie!"
+    }
+
+
+    @RequestMapping("/show")
+    fun getTicket(): String {
+        return "This is ticket"
     }
 
 }
